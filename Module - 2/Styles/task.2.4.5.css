@@ -1,0 +1,16 @@
+.sidebar{
+    border: solid red;
+    float:  right;
+    width:  30px;
+    height: 150px;
+}
+.main{
+    border: solid green;
+    float: left;
+    width: 60px;
+    height: 150px;
+}
+p{
+    position: absolute;
+    top: 160px;
+}
