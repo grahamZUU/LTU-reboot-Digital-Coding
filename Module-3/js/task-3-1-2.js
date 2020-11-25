@@ -1,17 +1,16 @@
-var theBill = 34.56;
-var serviceCharge = 1.1;
-var fullCost;
-var toPay;
+var firstname = 'Fred';
+var second = 'smith';
+var full = firstname + ' ' + second;
 
-var first = '   Greg';
-var last = 'McDoogle   ';
-var full = first  +  ' .. ' + last;
-fullCost = theBill * serviceCharge;
+console.log(full);
 
+var Presents = 500.67;
+var people = 7;
+var perPerson;
+var cost;
 
-document.write(full);
-document.write('            Cost  =>  ' + fullCost);
+perPerson = Presents / people;
+cost = perPerson.toFixed(2);
 
-toPay = fullcost.tofixed();
-alert('    Cost = ' + toPay);
-
+console.log(perPerson);
+console.log(cost);
