@@ -6,7 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/functions.js"></script>
+    <script src="js/functions.js">
+    </script>
+    <script>
+    var i,j,k;
+    i = 1; j = 2; k = 3;    
+    if ( 5 > 12) 
+        {
+            console.log("True indeed ");
+        }
+    else
+        {
+            console.log("not so true");
+        }
+
+    var temperature  =  55;
+    if (temperature < 50) {
+        console.log("Nippy ....");
+    }    
+    var m, t = 8, midday = true;
+    if (t < 0) {
+        m = "Below 0";
+    } else if (t < 30 && midday) {
+        m = "WARM and Midday";
+    } else if (t < 30) {
+        m = "WARM, but not midday;";
+    } else if (t < 50) {
+        m = "Hot ish";
+    } else {
+        m = "HOT";
+    }
+    console.log(t, m);
+
+    var roulette = 33;
+    switch (roulette) {
+        case 0:  
+            m = "nothing"; break;
+        case 33: 
+            m = "=> 33"; break;
+        default: m = "Catch All"; 
+    }
+    console.log("Roulette => " + m);
+    document.write("HELLO!");
+    document.write("Water...");
+
+
+</script>    
     <script src="js/task-3-2-0.js"></script>
     </script>   
 </body>
