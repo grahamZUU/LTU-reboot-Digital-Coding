@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-3-4-1</title>
+</head>
+<body>
+    <script>
+        //
+        //   LOOPS
+        //
+        //      Break, Continue
+
+        var i,j,k;
+        var numFingers = 10;
+        while(numFingers > 0) {
+            document.write(numFingers-- + ", ");
+            if (numFingers == 4) { 
+                break;
+            }    
+        }
+        for(var i = 1; 
+                i <= 12; i++) {
+            console.log(i);
+        }
+        var food = ["Chocolate", 
+                    "Prawn Crackers",
+                    "Chinese",
+                    "indian"];
+                    
+        for (i = 0; i < food.length; i++) {
+            document.write(food[i] + "<br>");
+        }
+        i = 5;
+        console.log(i++);
+        i = 5;
+        console.log(++i);
+
+
+
+    </script>
+</body>
+</html>
