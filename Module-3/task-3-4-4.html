@@ -7,10 +7,46 @@
 </head>
 <body>
     <script>
+        //
+        var recipe = {
+            rTitle: "Stew",
+            serv:   5,
+            ingred: [
+                "beef",
+                "Carrots",
+                "tomatoes",
+                "onions"],
+            direc: [
+                "Beef fry",  
+                "rest, leave", 
+                "2 hours", 
+                "eat"],
+            letsCook:  function() {
+                document.write("I'm hungry, " +
+                " let's cook ..");
 
-
-
+            },
+            howTo:  function() {
+                        return this.rTitle + 
+                        " from fn "; }
+            };
+        var r = recipe;
+        document.write("<br>" + ".rTitle + "<br>" +
+                       r.serv);
+    for (var i = 0; 
+        i < r.ingred.length; 
+        i++)
+        {
+            document.write(r.ingred[i] + ", ");
+        }               
         
+
+    var x = recipe.howTo(); 
+    document.write(x);
+
+
+
+
     </script>
 </body>
 </html>

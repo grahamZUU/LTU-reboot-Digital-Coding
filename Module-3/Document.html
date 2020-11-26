@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/Module-3/task-3-5-1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //
+        // Shopping ..
+        //
+
+
+
+
+let ss = [ 
+{name:"loaf"			,type:"food"	,quantity:1,price:0.85 	},
+{name:"multipack beans"	,type:"food"	,quantity:10,price:1 	},
+{name:"mushrooms"	   	,type:"food"	,quantity:4,price:.1 	},
+{name:"can of beer"		,type:"alcohol"	,quantity:1,price:1.1 	},
+{name:"prosseco"		,type:"alcohol"	,quantity:1,price:8.99 	},
+{name:"steak"			,type:"food"	,quantity:2,price:3.99 	},
+{name:"blue cheese"		,type:"food"	,quantity:1,price:2.99	},
+{name:"candles"	   	,type:"food"		,quantity:3,price:1.99 	},
+{name:"cheesecake"		,type:"alcohol"	,quantity:3,price:4.99	},
+{name:"onions"		,type:"alcohol"		,quantity:1,price:.4	} ];
+
+
+
+function shoppingCost(cart){
+    let pTotal = 0, dTotal = 0;
+	console.log(cart[0].name);
+    for (var i = 0; i < cart.length; i++) {
+		console.log(cart[i].quantity + " " + cart[i].price);
+        pTotal += (cart[i].quantity * cart[i].price);
+        if (cart[i].type == "food") {
+            dTotal += cart[i].price * 0.8 * cart[i].quantity;
+        }
+
+    }
+	dTotal = dTotal.toFixed(2);
+    document.write ("<h1>" + 
+	                " Price " + pTotal + 
+					",  Discount " + dTotal +
+                    "</h1>");
+}
+
+shoppingCost(ss);
+
+
+    </script><h1> Price 53.65,  Discount 22.55</h1>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body></html>
