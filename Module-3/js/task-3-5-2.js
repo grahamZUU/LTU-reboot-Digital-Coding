@@ -2,23 +2,17 @@
 
 
 let ss = [ 
-{name:"loaf"			,type:"food"	,quantity:1,price:0.85 	},
-{name:"multipack beans"	,type:"food"	,quantity:10,price:1 	},
-{name:"prosseco"		,type:"alcohol"	,quantity:1,price:8.99 	},
-{name:"steak"			,type:"food"	,quantity:2,price:3.99 	},
-{name:"blue cheese"		,type:"food"	,quantity:1,price:2.99	},
-{name:"candles"	     	,type:"food"	,quantity:3,price:1.99 	},
-{name:"cheesecake"		,type:"alcohol"	,quantity:3,price:4.99	},
-{name:"loaf"			,type:"food"	,quantity:1,price:0.85 	},
-{name:"beans"	        ,type:"food"	,quantity:103,price:1 	},
-{name:"mushrooms"	   	,type:"food"	,quantity:4,price:.1 	},
-{name:"can of beer"		,type:"alcohol"	,quantity:1,price:1.1 	},
-{name:"white wine"		,type:"alcohol"	,quantity:1,price:8.99 	},
-{name:"steak"			,type:"food"	,quantity:2,price:3.99 	},
-{name:"green cheese"	,type:"food"	,quantity:1,price:2.99	},
-{name:"candles"	     	,type:"food"	,quantity:3,price:1.99 	},
-{name:"cheesecake"		,type:"alcohol"	,quantity:3,price:4.99	},
-{name:"onions"		    ,type:"alcohol"	,quantity:1,price:.4	} 
+{name:"loaf"			,type:"food"	,quantity:1, price:0.85 	},
+{name:"multipack beans"	,type:"food"	,quantity:10,price:1 	    },
+{name:"prosseco"		,type:"alcohol"	,quantity:1, price:8.99 	},
+{name:"steak"			,type:"food"	,quantity:2, price:3.99 	},
+{name:"can of beer"		,type:"alcohol"	,quantity:1, price:1.1 	    },
+{name:"white wine"		,type:"alcohol"	,quantity:1, price:8.99 	},
+{name:"steak"			,type:"food"	,quantity:2, price:3.99 	},
+{name:"green cheese"	,type:"food"	,quantity:1, price:2.99	    },
+{name:"candles"	     	,type:"food"	,quantity:3, price:1.99 	},
+{name:"cheesecake"		,type:"alcohol"	,quantity:3, price:4.99	    },
+{name:"onions"		    ,type:"alcohol"	,quantity:1, price:.4	    } 
 ];
     
     function shoppingCost(cart, inType, inDisc){
